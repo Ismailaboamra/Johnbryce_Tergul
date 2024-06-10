@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 
 public class MyCompiste {
-    @Autowired
     private MyPrototype myPrototype;
     @Autowired
     private MySingleton mySingleton;
