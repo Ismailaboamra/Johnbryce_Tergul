@@ -1,6 +1,7 @@
 package Spring.Components;
 
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +9,7 @@ import javax.annotation.PostConstruct;
 
 @Scope("prototype")
 @Component
+@Lazy
 public class MyPrototype {
     private int x = (int) (Math.random()*100);
 
